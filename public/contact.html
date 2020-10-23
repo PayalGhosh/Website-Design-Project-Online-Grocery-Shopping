@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Mantra|Largest range of Organic Products</title>
+    <link rel="stylesheet" href="../css/css_contact.css">
+    <script src="https://kit.fontawesome.com/a843b56b38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section id="discount">
+            <p>Get exclusive deals and combos at attractive offers. Sign up today and grab them!</p>
+            <i class="fa fa-times" onclick="disc_display()"></i>
+        </section>
+        <nav>
+            <img src="../images/logo.png">
+            <ul id="navbar">
+                <li class="nav-item"><a href="/home.html">HOME</a></li>
+                <li class="nav-item"><a href="/shop.html">SHOP</a></li>
+                <li class="nav-item"><a href="/blog.html">BLOG</a></li>
+                <li class="nav-item"><a href="/contact.html" id="current">CONTACT</a></li>
+            </ul>
+            <span><a href="/signin.html">SignIn</a></span>
+        </nav>
+
+        <form id="search" method="POST" action="/contact/search.html">
+            <input type="text" id="sch-bar" name="search" placeholder="Search by categories vegetables , fruits , berries , meat etc.">
+            <input class="btn" type="submit" value="Search">
+            <input class="btn" type="submit" value="Checkout">
+        </form>
+
+        <section id="heading">
+            <h1>Contact Us</h1>
+            <p>Home - Contact</p>
+        </section>
+
+        <section id="info">
+            <div class="info-item">
+                <i class="fa fa-phone fa-2x"></i>
+                <h2>Phone</h2>
+                <p>+01-3-8888-6868</p>
+            </div>
+            <div class="info-item">
+                <i class="fa fa-map-marker fa-2x"></i>
+                <h2>Address</h2>
+                <p>60-49 Road 11378 New York</p>
+            </div>
+            <div class="info-item">
+                <i class="fa fa-clock-o fa-2x"></i>
+                <h2>Open Time</h2>
+                <p>10:00 am to 23:00 pm</p>
+            </div>
+            <div class="info-item">
+                <i class="fa fa-envelope-o fa-2x"></i>
+                <h2>Email</h2>
+                <p>hello@colorlib.com</p>
+            </div>
+        </section>
+
+        <section id="map">
+            <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Paud%20Road,Kothrud%20Pune+(OrganicMantra)&amp;t=p&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://embed-map.org/'>embed a google map in website</a> <script type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=889b65a9ef750cba7a1ffa38f6fd6a0f4a714a88'></script>
+        </section>
+
+        <h1>
+            Leave Message
+        </h1>
+
+        <form action="/contact/message.html" method="POST" id="contact-form">
+            <input type="text" id="name" name="name" class="form-item" placeholder="Your name*" required>
+            <input type="email" id="email" name="email" class="form-item" placeholder="Your email*" required>
+            <input type="text" id="phone" name="phone" class="form-item" placeholder="Your contact no." pattern="[0-9]{10}" title="Enter 10 digit mobile number">
+            <input type="text" id="address" name="address" class="form-item" placeholder="Your address" >
+            <textarea id="msg" class="form-item" name="msg" rows="5" cols="10" placeholder="Your message*" required></textarea>
+            <input class="form-item msg-btn" type="submit" value="Send Message">
+        </form>
+
+        <hr>
+
+        <section id="newsletter">
+            <div class="left" id="left-side">
+                <img src="../images/logo.png">
+                <p>Address: 60-49 Road 11378 New York</p>
+                <p>Phone: +65 11.188.888</p>
+                <p>Email: hello@colorlib.com</p>
+            </div>
+            <div class="right" id="right-side">
+                <p id="head">Join Our Newsletter Now</p>
+                <p>Get E-mail updates about our latest shop and special offers.</p>
+                <form action="/contact/newsletter.html" method="POST">
+                     <input type="email" id="email" name="newsEmail" placeholder="Enter your email">
+                     <input type="submit" value="Subscribe" class="subs-btn">
+                </form>
+                <p>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-pinterest"></i>
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            Copyright &copy;2020 All rights reserved | Organic Mantra
+        </footer>
+
+        <script>
+            function disc_display() {
+            discount = document.getElementById('discount');
+            if (discount.style.display == 'flex') {
+                discount.style.display = 'none';
+            }
+            else
+                discount.style.display = 'flex';
+        }
+        </script>
+
+    </header>

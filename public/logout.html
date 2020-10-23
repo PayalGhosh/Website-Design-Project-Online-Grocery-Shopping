@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Mantra|Largest range of Organic Products</title>
+    <link rel="stylesheet" href="../css/css_home.css">
+    <script src="https://kit.fontawesome.com/a843b56b38.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <section id="discount">
+            <p id="change">Get exclusive deals and combos at attractive offers. Sign up today and grab them!</p>
+            <i class="fa fa-times" onclick="disc_display()"></i>
+        </section>
+        <nav>
+            <img src="../images/logo.png">
+            <ul id="navbar">
+                <li class="nav-item"><a href="/home.html" id="current">HOME</a></li>
+                <li class="nav-item"><a href="/shop.html">SHOP</a></li>
+                <li class="nav-item"><a href="/blog.html">BLOG</a></li>
+                <li class="nav-item"><a href="/contact.html">CONTACT</a></li>
+            </ul>
+            <span><a href="/logout.html">Logout</a></span>
+        </nav>
+
+        <section id="menu_search">
+            <section id="menu">
+                <ul>
+                    <li id="menu-head">
+                        <h3>
+                            All departments
+                            <img src="../images/hamburger.png" onclick="hamburger()">
+                        </h3>
+                    </li>
+                    <ul id="menu-list-box">
+                        <li class="menu-list"><a href="/veg.html">Vegetables</a></li>
+                        <li class="menu-list"><a href="/fruit.html">Organic fruits</a></li>
+                        <li class="menu-list"><a href="/meat.html">Fresh meat</a></li>
+                        <li class="menu-list"><a href="/butter_eggs.html">Butter and eggs</a></li>
+                        <li class="menu-list"><a href="/berry.html">Fresh berries</a></li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section id="search">
+                <img class="mySlides" src="../images/anim1.jpg">
+                <img class="mySlides" src="../images/anim2.jpg">
+                <img class="mySlides" src="../images/anim3.jpg">
+                <img class="mySlides" src="../images/anim4.jpg">
+            </section>
+            </section>
+    </header>
+
+    <section id="organic">
+        <h2>Why switch to Organic?</h2>
+        <p>Organic products reduce public health risks to farm workers, their families, and consumers by minimizing
+            their exposure to toxic and persistent chemicals on the farm and in food, the soil in which they work and
+            play, the air they breathe, and the water they drink. Children are especially vulnerable to pesticides.
+            Thus, offering organic food and fiber products into the marketplace gives parents the option of choosing
+            products produced without the use of these toxins.
+            <a href="https://ota.com/organic-101/health-benefits-organic" target="_blank">Learn more...</a>
+        </p>
+    </section>
+
+    <section id="feature">
+        <h2>Featured Products</h2>
+        <div class="box">
+            <img src="../images/item1.jpg" alt="" class="box-item">
+            <img src="../images/item2.jpg" alt="" class="box-item">
+            <img src="../images/item3.jpg" alt="" class="box-item">
+            <img src="../images/item4.png" alt="" class="box-item">
+            <img src="../images/item5.jpg" alt="" class="box-item">
+            <img src="../images/item6.jpg" alt="" class="box-item">
+            <img src="../images/item7.jpg" alt="" class="box-item">
+            <img src="../images/item8.jpg" alt="" class="box-item">
+        </div>
+    </section>
+
+    <section id="banner">
+        <img class="banner-item" src="../images/banner1.jpg">
+        <img class="banner-item" src="../images/banner2.jpg">
+    </section>
+
+    <section id="blog-box">
+        <h2>Read Our Blogs</h2>
+        <div id="blog">
+            <div class="blog-item">
+                <img src="../images/blog1.jpg">
+                <h4>Easy vegan Breakfast for busy mornings</h4>
+                <a href="https://www.organicandreal.com/easy-vegan-breakfast/">Read more...</a>
+            </div>
+            <div class="blog-item">
+                <img src="../images/blog2.jpg">
+                <h4>Refined and natural - The sweet tooth about sugar</h4>
+                <a href="https://www.organicandreal.com/the-sweet-truth-about-sugar">Read more...</a>
+            </div>
+            <div class="blog-item">
+                <img src="../images/blog3.jpg">
+                <h4>Gluten-free Cooking for beginners</h4>
+                <a href="https://www.organicandreal.com/gluten-free-cooking">Read more...</a>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+        <section id="newsletter">
+            <div class="left" id="left-side">
+                <img src="../images/logo.png">
+                <p>Address: 60-49 Road 11378 New York</p>
+                <p>Phone: +65 11.188.888</p>
+                <p>Email: hello@colorlib.com</p>
+            </div>
+            <div class="right" id="right-side">
+                <p id="head">Join Our Newsletter Now</p>
+                <p>Get E-mail updates about our latest shop and special offers.</p>
+                <form action="/logout.html" method="POST">
+                     <input type="email" id="email" name="newsEmail" placeholder="Enter your email">
+                     <input type="submit" value="Subscribe" class="subs-btn">
+                </form>
+                <p>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-pinterest"></i>
+                </p>
+            </div>
+        </section>
+
+    <footer>
+        Copyright &copy;2020 All rights reserved | Organic Mantra
+    </footer>
+</body>
+<script>
+    function hamburger() {
+        menu_list_box = document.getElementById('menu-list-box');
+        if (menu_list_box.style.display == 'block') {
+            menu_list_box.style.display = 'none';
+            menu_list_box.style.visiblity = 'hidden';
+        }
+        else
+            menu_list_box.style.display = 'block';
+    }
+    
+    function disc_display() {
+        discount = document.getElementById('discount');
+        if (discount.style.display == 'flex') {
+            discount.style.display = 'none';
+        }
+        else
+            discount.style.display = 'flex';
+    }
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+
+</script>
+
+</html>

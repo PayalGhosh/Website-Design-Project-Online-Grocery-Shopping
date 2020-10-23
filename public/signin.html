@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Mantra|Largest range of Organic Products</title>
+    <script src="https://kit.fontawesome.com/a843b56b38.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/css_signin_signup.css">
+</head>
+<body>
+    <section id="discount">
+        <p>Get exclusive deals and combos at attractive offers. Sign up today and grab them!</p>
+        <i class="fa fa-times" onclick="disc_display()"></i>
+    </section>
+    <form action="/signin.html" method="POST">
+    <div class="container">
+    <h1>Sign In</h1>
+    <div class="container-item">
+        <i class="fa fa-envelope-o"></i>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+    </div>
+    <div class="container-item">
+        <i class="fa fa-lock"></i>
+        <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter your password" required>
+    </div>
+    <div class="container-item">
+        <span>
+    <input type="checkbox" id="chkbox" name="chkbox" checked>Remember me</span>
+    <a href="" onclick="forgot_pwd()">Forgot your password?</a>
+    </div>
+    <input type="submit" value="Sign In" class="btn">
+    <p>Don't have an account?<a href="/signup.html">Signup today!</a></p>
+    </div>
+    </form>
+    
+<script>
+    function forgot_pwd(){
+        alert("Check your inbox for the verification mail");
+    }
+</script>
+
+<script>
+    function disc_display() {
+    discount = document.getElementById('discount');
+    if (discount.style.display == 'flex') {
+        discount.style.display = 'none';
+    }
+    else
+        discount.style.display = 'flex';
+}
+</script>
+
+</body>
+</html>

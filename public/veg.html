@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Mantra|Largest range of Organic Products</title>
+    <script src="https://kit.fontawesome.com/a843b56b38.js" crossorigin="anonymous"></script><link rel="stylesheet" href="../css/css_shop_items.css">
+    
+</head>
+<body>
+    <header>
+        <section id="discount">
+            <p>Get exclusive deals and combos at attractive offers. Sign up today and grab them!</p>
+            <i class="fa fa-times" onclick="disc_display()"></i>
+        </section>
+        <nav>
+            <img src="../images/logo.png">
+            <ul id="navbar">
+                <li class="nav-item"><a href="/home.html">HOME</a></li>
+                <li class="nav-item"><a href="/shop.html" id="current">SHOP</a></li>
+                <li class="nav-item"><a href="/blog.html">BLOG</a></li>
+                <li class="nav-item"><a href="/contact.html">CONTACT</a></li>
+            </ul>
+            <span><a href="/signin.html">SignIn</a></span>
+        </nav>
+
+        <form id="search" method="POST" action="/veg/search.html">
+            <input type="text" id="sch-bar" name="search" placeholder="Search by categories vegetables , fruits , berries , meat etc.">
+            <input class="btn" type="submit" value="Search">
+            <input class="btn" type="submit" value="Checkout">
+        </form>
+
+        <section id="heading">
+            <h1>Vegetables</h1>
+            <p>OrganicMantra.com</p>
+        </section>
+
+    </header>
+
+    <section id="right">
+        <div class="veg-item">
+            <img src="../images/shop_veg1.jpeg">
+            <p>Rs.50</p>
+            <p class="cart">Add to cart</p>
+        </div>
+        <div class="veg-item">
+            <img src="../images/shop_veg2.jpg">
+            <p>Rs.50</p>
+            <p class="cart">Add to cart</p>
+        </div>
+        <div class="veg-item">
+            <img src="../images/shop_veg3.jpg">
+            <p>Rs.50</p>
+            <p class="cart">Add to cart</p>
+        </div>
+        <div class="veg-item">
+            <img src="../images/shop_veg4.jpg">
+            <p>Rs.50</p>
+            <p class="cart">Add to cart</p>
+        </div>
+        <div class="veg-item">
+            <img src="../images/shop_veg5.jpg">
+            <p>Rs.50</p>
+            <p class="cart">Add to cart</p>
+        </div>
+        <div class="veg-item">
+            <img src="../images/shop_veg6.jpg">
+            <p>Rs.50</p>
+            <p class="cart">Add to cart</p>
+        </div>
+        <div class="veg-item">
+            <img src="../images/shop_veg7.jpg">
+            <p>Rs.50</p>
+            <p class="cart">Add to cart</p>
+        </div>
+        <div class="veg-item">
+            <img src="../images/shop_veg8.jpg">
+            <p>Rs.50</p>
+            <p class="cart">Add to cart</p>
+        </div>
+        <div class="veg-item">
+            <img src="../images/shop_veg9.jpg">
+            <p>Rs.50</p>
+            <p class="cart">Add to cart</p>
+        </div>
+    </section>
+    <hr>
+    <section id="banner">
+        <img class="banner-item" src="../images/banner1.jpg">
+        <img class="banner-item" src="../images/banner2.jpg">
+    </section>
+
+    <section id="blog-box">
+        <h2>Posts you may like</h2>
+        <div id="blog">
+            <div class="blog-item">
+                <img src="../images/blog1.jpg">
+                <h4>Easy vegan Breakfast for busy mornings</h4>
+                <a href="https://www.organicandreal.com/easy-vegan-breakfast/">Read more...</a>
+            </div>
+            <div class="blog-item">
+                <img src="../images/blog2.jpg">
+                <h4>Refined and natural - The sweet tooth about sugar</h4>
+                <a href="https://www.organicandreal.com/the-sweet-truth-about-sugar">Read more...</a>
+            </div>
+            <div class="blog-item">
+                <img src="../images/blog3.jpg">
+                <h4>Gluten-free Cooking for beginners</h4>
+                <a href="https://www.organicandreal.com/gluten-free-cooking">Read more...</a>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+        <section id="newsletter">
+            <div class="left" id="left-side">
+                <img src="../images/logo.png">
+                <p>Address: 60-49 Road 11378 New York</p>
+                <p>Phone: +65 11.188.888</p>
+                <p>Email: hello@colorlib.com</p>
+            </div>
+            <div class="right" id="right-side">
+                <p id="head">Join Our Newsletter Now</p>
+                <p>Get E-mail updates about our latest shop and special offers.</p>
+                <form action="/veg/newsletter.html" method="POST">
+                     <input type="email" id="email" name="newsEmail" placeholder="Enter your email">
+                     <input type="submit" value="Subscribe" class="subs-btn">
+                </form>
+                <p>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-pinterest"></i>
+                </p>
+            </div>
+        </section>
+
+    <footer>
+        Copyright &copy;2020 All rights reserved | Organic Mantra
+    </footer> 
+
+    <script>
+        function disc_display() {
+        discount = document.getElementById('discount');
+        if (discount.style.display == 'flex') {
+            discount.style.display = 'none';
+        }
+        else
+            discount.style.display = 'flex';
+    }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #discount{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items:center;
+            background-color: black;
+            color:white;
+        }
+        #discount p{
+            width:80%;
+            padding:15px;
+            font-family: sans-serif;
+        }
+        #discount i{
+            width:20%;
+            padding:5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        nav img {
+            height: 75px;
+            width: 10%;
+            padding: 0px;
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-item {
+            list-style: none;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            margin: 10px;
+            padding: 6px 22px;
+            border-radius: 10px;
+            font-family: 'Bree Serif', serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color:rgb(16, 148, 16);
+        }
+
+        .nav-item a:hover{
+            background-color: rgb(215, 241, 215);
+            color: black;
+        }
+        #current{
+            color:black;
+        }
+
+        nav span a{
+            font-family: 'Bree Serif', serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color:rgb(16, 148, 16);
+            text-decoration: none;
+        }
+        nav span a:hover{
+            cursor: pointer;
+            color: black;
+        }
+        #search{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        #sch-bar{
+            margin: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 40%;
+        }
+        .btn{
+            color: white;
+            padding: 7px 30px;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: green;
+            font-size: 1.3rem;
+            font-family: monospace;
+            cursor: pointer;
+        }
+        #heading{
+            background-image: url("../images/contact_bg.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            height:11rem;
+            opacity:0.8;
+        }
+        #heading h1{
+            text-align: center;
+            color:white;
+            font-size:2rem;
+            font-family: 'Bree Serif', serif;
+            padding:56px;
+            padding-bottom: 0px;
+            margin:5px;
+        }
+        #heading p{
+            color:white;
+            font-family: sans-serif;
+            font-size:1rem;
+            margin:5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        #info{
+            display:flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .info-item{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+            margin:50px 10px 60px 10px;
+            width:20%;
+        }
+        .info-item i{
+            color:green;
+            margin:50px 20px 15px 20px;
+        }
+        .info-item h2{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size:1.6rem;
+        }
+        .info-item p{
+            margin:10px;
+            color:grey;
+            font-family: monospace;
+            font-size:15px;
+        }
+        h1{
+            text-align:center;
+            color: green;
+            font-size:2rem;
+            margin:50px 0;
+            font-family: 'Bree Serif', serif;
+        }
+        #contact-form{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        .form-item{
+            width: 80%;
+            padding: 10px;
+            font-size: 15px;
+            font-family: monospace;
+            border: 1px solid gray;
+            border-radius: 3px;
+            margin: 10px 0;
+            outline: none;
+        }
+        .msg-btn{
+            width:30%;
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #newsletter{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .left,.right{
+            width:50%;
+        }
+        .left img{
+            margin-top:20px;
+            display:block;
+            width:30%;
+            margin-left:20%;
+        }
+        .left p{
+            width:50%;
+            margin:20px;
+            margin-left:20%;
+            font-family: sans-serif;
+        }
+        .right p,.right form{
+            width:90%;
+            margin:20px auto;
+        }
+        .right p{
+            font-family: sans-serif;
+        }
+        .right #head{
+            font-family: sans-serif;
+            font-weight:bold;
+            font-size:20px;
+        }
+        .right form #email{
+            padding:10px;
+            border-radius: 3px;
+            font-family: sans-serif;
+            width:50%;
+            border: 1px solid gray;
+        }
+        .right form .subs-btn{
+            border-radius: 3px;
+            padding: 9px 20px;
+            font-weight: bold;
+            color: white;
+            background-color: green;
+            font-size: 15px;
+            border: 1px solid gray;
+            outline: none;
+            cursor: pointer;
+        }
+        .right p i{
+            border-radius: 20px;
+            border: 1px solid gray;
+            padding: 10px;
+            background: rgb(154, 211, 154);
+            margin: 0 8px;
+            cursor:pointer;
+        }
+        footer{
+            margin-top:70px;
+            background-color: rgb(229 241 229);
+            color: green;
+            height: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            text-align: center;
+        }
+        @media screen and (max-width:958px){
+            .right form .subs-btn{
+                margin-top:10px;
+            }
+        }
+        @media screen and (max-width:650px){
+            nav{
+                flex-direction: column;
+                justify-content: center;
+                padding:10px;
+            }
+            nav img{
+                height: 90px;
+                width: 30%;
+            }
+            #navbar{
+                flex-direction: column;
+            }
+            .info-item{
+                width:40%;
+                margin:10px 10px 30px 10px;
+            }
+            .left img{
+                margin-top:20px;
+                display:block;
+                width:50%;
+                margin-left:20%;
+            }
+            .left p{
+                width:70%;
+                margin:20px;
+                margin-left:10%;
+                font-family: sans-serif;
+            }
+            .right form #email{
+                width:85%;
+            }
+            .msg-btn{
+                width:85%;
+            }
+
+        }
+            @media screen and (max-width:570px){
+                #sch-bar{
+                    margin: 20px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    width: 60%;
+                }
+            }
+            @media screen and (max-width:490px){
+                #sch-bar{
+                    margin: 20px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    width: 80%;
+                }
+                .left,.right{
+                    width:100%;
+                }
+                .left{
+                    border-bottom:1px solid black;
+                }
+                .info-item{
+                    width:60%;
+                    margin:10px ;
+                }
+                .info-item i{
+                    margin:30px 20px 15px 20px;
+                }
+            }
+
+            @media screen and (max-width:400px){
+                footer{
+                    margin-top:20px;
+                    background-color: rgb(229 241 229);
+                    color: green;
+                    height: 40px;
+                    font-size: 1rem;
+                    font-weight:normal;
+                    padding: 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: monospace;
+                    text-align: center;
+                }
+            }
+        

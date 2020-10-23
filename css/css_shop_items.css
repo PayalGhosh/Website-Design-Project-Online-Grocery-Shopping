@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #discount{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items:center;
+            background-color: black;
+            color:white;
+        }
+        #discount p{
+            width:80%;
+            padding:15px;
+            font-family: sans-serif;
+        }
+        #discount i{
+            width:20%;
+            padding:5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        nav img {
+            height: 75px;
+            width: 10%;
+            padding: 0px;
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-item {
+            list-style: none;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            margin: 10px;
+            padding: 6px 22px;
+            border-radius: 10px;
+            font-family: 'Bree Serif', serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color:rgb(16, 148, 16);
+        }
+
+        .nav-item a:hover{
+            background-color: rgb(215, 241, 215);
+            color: black;
+        }
+        #current{
+            color:black;
+        }
+
+        nav span a{
+            font-family: 'Bree Serif', serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color:rgb(16, 148, 16);
+            text-decoration: none;
+        }
+        nav span a:hover{
+            cursor: pointer;
+            color: black;
+        }
+        #search{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        #sch-bar{
+            margin: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 40%;
+        }
+        .btn{
+            color: white;
+            padding: 7px 30px;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: green;
+            font-size: 1.3rem;
+            font-family: monospace;
+            cursor: pointer;
+        }
+        #heading{
+            background-image: url("../images/veg_bg.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            height:11rem;
+            opacity:0.9;
+        }
+        #heading h1{
+            text-align: center;
+            color:white;
+            font-size:2rem;
+            font-family: 'Bree Serif', serif;
+            padding:56px;
+            padding-bottom: 0px;
+            margin:5px;
+        }
+        #heading p{
+            color:white;
+            font-family: sans-serif;
+            font-size:1rem;
+            margin:5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        #right{
+            display:flex;
+            flex-direction:row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .veg-item{
+            margin: 30px 40px;
+            width: 21%;
+            height: 30%;
+        }
+        .veg-item img{
+            width:100%;
+            height:216px;
+        }
+        .veg-item p{
+            text-align :center;
+            margin:12px;
+            font-weight: bold;
+            font-family: monospace;
+            font-size:15px;
+        }
+        .cart:hover{
+            color:red;
+            cursor:pointer;
+        }
+        #banner{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .banner-item{
+            width:45%;
+            height:20%;
+            margin:20px;
+        }
+
+        
+        #blog-box h2{
+            text-align:center;
+            color: green;
+            font-size:2rem;
+            padding:30px;
+            font-family: 'Bree Serif', serif;
+        }
+        #blog{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-bottom: 50px;
+        }
+        .blog-item{
+            width:28%;
+            height:20%;
+        }
+        .blog-item img{
+            width:25vw;
+            height:30vh;
+            margin-top:20px;
+        }
+        .blog-item h4{
+            font-size: 1rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin:10px;
+            color: rgb(16, 148, 16);
+            font-weight: bold;
+        }
+        .blog-item a{
+            margin: 20px 10px;
+            padding: 5px 13px;
+            background-color: rgb(195, 235, 195);
+            border-radius: 5px;
+            color: black;
+            text-decoration: none;
+        }
+        .blog-item a:hover{
+            color:red;
+        }
+
+        #newsletter{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .left,.right{
+            width:50%;
+        }
+        .left img{
+            margin-top:20px;
+            display:block;
+            width:30%;
+            margin-left:20%;
+        }
+        .left p{
+            width:50%;
+            margin:20px;
+            margin-left:20%;
+            font-family: sans-serif;
+        }
+        .right p,.right form{
+            width:90%;
+            margin:20px auto;
+        }
+        .right p{
+            font-family: sans-serif;
+        }
+        .right #head{
+            font-family: sans-serif;
+            font-weight:bold;
+            font-size:20px;
+        }
+        .right form #email{
+            padding:10px;
+            border-radius: 3px;
+            font-family: sans-serif;
+            width:50%;
+            border: 1px solid gray;
+        }
+        .right form .subs-btn{
+            border-radius: 3px;
+            padding: 9px 20px;
+            font-weight: bold;
+            color: white;
+            background-color: green;
+            font-size: 15px;
+            border: 1px solid gray;
+            outline: none;
+            cursor: pointer;
+        }
+        .right p i{
+            border-radius: 20px;
+            border: 1px solid gray;
+            padding: 10px;
+            background: rgb(154, 211, 154);
+            margin: 0 8px;
+            cursor:pointer;
+        }
+        footer{
+            margin-top:20px;
+            background-color: rgb(229 241 229);
+            color: green;
+            height: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            text-align:center;
+        }
+        @media screen and (max-width:958px){
+            .right form .subs-btn{
+                margin-top:10px;
+            }
+        }
+        @media screen and (max-width:648px){
+            nav{
+                flex-direction: column;
+                justify-content: center;
+                padding:10px;
+            }
+            nav img{
+                height: 90px;
+                width: 30%;
+            }
+            #navbar{
+                flex-direction: column;
+            }
+            .banner-item{
+                width:60%;
+                height:40%;
+                margin:20px;
+            }
+            #menu-head img{
+                display:inline;
+            }
+            .veg-item{
+                margin: 30px 40px;
+                width: 30%;
+                height: 30%;
+            }
+            .info-item{
+                width:40%;
+                margin:10px 10px 30px 10px;
+            }
+            .left img{
+                margin-top:20px;
+                display:block;
+                width:50%;
+                margin-left:20%;
+            }
+            .left p{
+                width:70%;
+                margin:20px;
+                margin-left:10%;
+                font-family: sans-serif;
+            }
+            .right form #email{
+                width:85%;
+            }
+        }
+        @media screen and (max-width:490px){
+            .left,.right{
+                width:100%;
+            }
+            .left{
+                border-bottom:1px solid black;
+            }
+        }
+        @media screen and (max-width:570px){
+            #sch-bar{
+                margin: 20px;
+                padding: 10px;
+                border-radius: 5px;
+                width: 60%;
+            }
+        }
+        @media screen and (max-width:500px){
+            .banner-item{
+                width:65%;
+                height:20%;
+                margin:20px;
+            }
+            #blog{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .blog-item{
+                width:90%;
+                height:30%;
+            }
+            .blog-item img{
+                display:block;
+                width:55vw;
+                height:50vh;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:20px;
+            }
+            .blog-item h4{
+                text-align: center;
+            }
+            .blog-item a{
+                display:block;
+                width:7em;
+                margin:auto;
+        
+            }
+        }
+        @media screen and (max-width:485px){
+            #sch-bar{
+                margin: 20px;
+                padding: 10px;
+                border-radius: 5px;
+                width: 80%;
+            }
+        }
+        @media screen and (max-width:400px){
+            footer{
+                margin-top:20px;
+                background-color: rgb(229 241 229);
+                color: green;
+                height: 40px;
+                font-size: 1rem;
+                font-weight:normal;
+                padding: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: monospace;
+                text-align: center;
+            }
+            .banner-item{
+                width:75%;
+                height:25%;
+                margin:20px;
+            }
+            .veg-item{
+                margin: 30px 40px;
+                width: 60%;
+                height: 30%;
+            }
+        }

@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #discount{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items:center;
+            background-color: black;
+            color:white;
+        }
+        #discount p{
+            width:80%;
+            padding:15px;
+            font-family: sans-serif;
+        }
+        #discount i{
+            width:20%;
+            padding:5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        nav img {
+            height: 75px;
+            width: 10%;
+            padding: 0px;
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-item {
+            list-style: none;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            margin: 10px;
+            padding: 6px 22px;
+            border-radius: 10px;
+            font-family: 'Bree Serif', serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color:rgb(16, 148, 16);
+        }
+
+        .nav-item a:hover{
+            background-color: rgb(215, 241, 215);
+            color: black;
+        }
+        #current{
+            color:black;
+        }
+
+        nav span a{
+            font-family: 'Bree Serif', serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color:rgb(16, 148, 16);
+            text-decoration: none;
+        }
+        nav span a:hover{
+            cursor: pointer;
+            color: black;
+        }
+        #heading{
+            background-image: url("../images/blog_bg.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            height:10rem;
+            opacity:0.8;
+        }
+        #heading h1{
+            text-align: center;
+            color:white;
+            font-size:2rem;
+            font-family: 'Bree Serif', serif;
+            padding:56px;
+            margin:5px;
+        }
+        #blog-box{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap:wrap;
+            margin-top:60px;
+        }
+        .blog-cards{
+            margin:10px;
+            width:30%;
+            height:30%;
+            border-radius: 10px;
+            box-shadow:2px 2px 2px  rgb(228, 220, 220);
+        }
+        .blog-cards img{
+            display: block;
+            width: 100%;
+            height: 50%;
+            margin-bottom: 17px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .blog-cards h4{
+            text-align:center;
+            color:rgb(14, 97, 14);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-bottom:10px;
+            font-size: 19px;
+        }
+        .blog-cards p{
+            text-align: justify;
+            margin:12px;
+            font-family: sans-serif;
+        }
+        .blog-cards a{
+            text-decoration: none;
+            font-weight: bold;
+            color: #5c5cbc;
+        }
+        #more{
+            position: absolute;
+            right:32px;
+            margin: 20px 5px;
+        }
+        #more a{
+            text-decoration: none;
+            font-size: 20px;
+            font-family: monospace;
+            font-weight: bold;
+            color: #5c5cbc;
+            margin:20px 5px;
+        }
+        .blog-cards a:visited,#more a:visited{
+            color:#5c5cbc;
+        }
+        .blog-cards a:hover,#more a:hover{
+            color:red;
+        }
+        hr{
+            margin-top:100px;
+        }
+        #newsletter{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .left,.right{
+            width:50%;
+        }
+        .left img{
+            margin-top:20px;
+            display:block;
+            width:30%;
+            margin-left:20%;
+        }
+        .left p{
+            width:50%;
+            margin:20px;
+            margin-left:20%;
+            font-family: sans-serif;
+        }
+        .right p,.right form{
+            width:90%;
+            margin:20px auto;
+        }
+        .right p{
+            font-family: sans-serif;
+        }
+        .right #head{
+            font-family: sans-serif;
+            font-weight:bold;
+            font-size:20px;
+        }
+        .right form #email{
+            padding:10px;
+            border-radius: 3px;
+            font-family: sans-serif;
+            width:50%;
+            border: 1px solid gray;
+        }
+        .right form .subs-btn{
+            border-radius: 3px;
+            padding: 9px 20px;
+            font-weight: bold;
+            color: white;
+            background-color: green;
+            font-size: 15px;
+            border: 1px solid gray;
+            outline: none;
+            cursor: pointer;
+        }
+        .right p i{
+            border-radius: 20px;
+            border: 1px solid gray;
+            padding: 10px;
+            background: rgb(154, 211, 154);
+            margin: 0 8px;
+            cursor:pointer;
+        }
+
+        footer{
+            margin-top:70px;
+            background-color: rgb(229 241 229);
+            color: green;
+            height: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            text-align: center;
+        }
+        @media screen and (max-width:958px){
+            .right form .subs-btn{
+                margin-top:10px;
+            }
+        }
+        @media screen and (max-width:650px){
+            nav{
+                flex-direction: column;
+                justify-content: center;
+                padding:10px;
+            }
+            nav img{
+                height: 90px;
+                width: 30%;
+            }
+            #navbar{
+                flex-direction: column;
+            }
+            .info-item{
+                width:40%;
+                margin:10px 10px 30px 10px;
+            }
+            .left img{
+                margin-top:20px;
+                display:block;
+                width:50%;
+                margin-left:20%;
+            }
+            .left p{
+                width:70%;
+                margin:20px;
+                margin-left:10%;
+                font-family: sans-serif;
+            }
+            .right form #email{
+                width:85%;
+            }
+        }
+        @media screen and (max-width:600px){
+         #blog-last{
+             display: none;
+         }   
+         .blog-cards{
+            margin:10px;
+            width:43%;
+            height:30%;
+            border-radius: 10px;
+            box-shadow:2px 2px 2px  rgb(228, 220, 220);
+        }
+        .blog-cards img{
+            display: block;
+            width: 100%;
+            height: 50%;
+            margin-bottom: 17px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+    @media screen and (max-width:490px){
+        .blog-cards{
+            margin:10px;
+            width:70%;
+            height:30%;
+            border-radius: 10px;
+            box-shadow:2px 2px 2px  rgb(228, 220, 220);
+        }
+        .left,.right{
+            width:100%;
+        }
+        .left{
+            border-bottom:1px solid black;
+        }
+    }
+ 

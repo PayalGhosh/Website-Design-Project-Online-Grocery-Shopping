@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Mantra|Largest range of Organic Products</title>
+    <link rel="stylesheet" href="../css/css_blog.css">
+    <script src="https://kit.fontawesome.com/a843b56b38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section id="discount">
+            <p>Get exclusive deals and combos at attractive offers. Sign up today and grab them!</p>
+            <i class="fa fa-times" onclick="disc_display()"></i>
+        </section>
+        <nav>
+            <img src="../images/logo.png">
+            <ul id="navbar">
+                <li class="nav-item"><a href="/home.html">HOME</a></li>
+                <li class="nav-item"><a href="/shop.html">SHOP</a></li>
+                <li class="nav-item"><a href="/blog.html" id="current">BLOG</a></li>
+                <li class="nav-item"><a href="/contact.html">CONTACT</a></li>
+            </ul>
+            <span><a href="/signin.html">SignIn</a></span>
+        </nav>
+
+        <section id="heading">
+            <h1>Our Blog Posts</h1>
+        </section>
+
+    </header>
+
+    <section id="blog-box">
+        <div class="blog-cards">
+         <img src="../images/blog2.jpg">
+         <h4>Refined and natural - the sweet truth about sugar</h4>
+         <p>How many articles have told you how bad sugar is for your body and why you immediately need to purge it from your 
+              <a href="https://www.organicandreal.com/the-sweet-truth-about-sugar"> Learn more...</a></p> 
+        </div>
+        <div class="blog-cards">
+            <img src="../images/blog_card2.jpg">
+            <h4>The Vegan Vs Whole-Plant based banter</h4>
+            <p>For many of you, the start of the new year signals the start of a healthy lifestyle. Making dietary changes can help you reap huge health benefits <a href="https://www.organicandreal.com/the-vegan-vs-whole-plant/"> Learn more....</a>
+            </p>
+        </div>
+        <div class="blog-cards">
+            <img src="../images/blog3.jpg">
+            <h4>Gluten-free cooking tips for beginners</h4>
+            <p>Are you planning to go gluten-free? Whether you are thinking of avoiding gluten to eat healthier or for medical reasons, gluten-free cooking <a href="https://www.organicandreal.com/gluten-free-cooking"> Learn more....</a></p>
+        </div>
+        <div class="blog-cards">
+            <img src="../images/blog_card4.jpg">
+            <h4>Best Christmas food gifts for 2019</h4>
+            <p>From quick bites to comforting teas, Christmas is the right time of the year to spoil your loved ones with food gifts<a href="https://www.organicandreal.com/christmas-food-gifts-2019"> Learn more....</a></p>
+        </div>
+        <div class="blog-cards">
+            <img src="../images/blog_card5.jpg">
+            <h4>How to go vegan and meet all your nutritional needs?</h4>
+            <p>A vegan lifestyle is not to be devoid of essential nutrients. And if this has been your concern on the path of walking down a healthy lifestyle<a href="https://www.organicandreal.com/how-to-go-vegan"> Learn more....</a></p>
+        </div>
+        <div class="blog-cards">
+            <img src="../images/blog_card6.jpg">
+            <h4>How to build a new healthy habit this season</h4>
+            <p>It’s the beginning of the new season and you want to make positive changes to your <a href="https://www.organicandreal.com/new-healthy-habit-blog"> Learn more....</a></p>
+        </div>
+        <div class="blog-cards">
+            <img src="../images/blog_card7.jpg">
+            <h4>How to keep your health & wellness in check all year round</h4>
+            <p>Health & Wellness goals would rather not be drastic and hence short lived. So it is also wiser to look <a href="https://www.organicandreal.com/how-keep-your-health-wellness-check-all-year-round"> Learn more....</a></p>
+        </div>
+        <div class="blog-cards">
+            <img src="../images/blog_card8.jpg">
+            <h4>How is reducing better than recycling?</h4>
+            <p>What do we do with all the daily trash, then? Don’t we need to dump stuff we don’t need anymore? What’s wrong<a href="https://www.organicandreal.com/how-is-reducing-better"> Learn more....</a></p>
+        </div>
+        <div class="blog-cards" id="blog-last">
+            <img src="../images/blog_card9.jpg">
+            <h4>The story behind your favourite Christmas desserts</h4>
+            <p>Mention candy cane, gingerbread house, plum cake or eggnog, and it is bound to evoke happy memories<a href="https://www.organicandreal.com/the-story-behind-your-favourite-christmas-desserts"> Learn more....</a></p>
+        </div>
+    </section>
+
+    <p id="more">
+       <a href="https://www.organicandreal.com/blogs.html">Read more blogs...</a>
+    </p>
+
+    <hr>
+
+        <section id="newsletter">
+            <div class="left" id="left-side">
+                <img src="../images/logo.png">
+                <p>Address: 60-49 Road 11378 New York</p>
+                <p>Phone: +65 11.188.888</p>
+                <p>Email: hello@colorlib.com</p>
+            </div>
+            <div class="right" id="right-side">
+                <p id="head">Join Our Newsletter Now</p>
+                <p>Get E-mail updates about our latest shop and special offers.</p>
+                <form action="/blog.html" method="POST">
+                     <input type="email" id="email" name="newsEmail" placeholder="Enter your email">
+                     <input type="submit" value="Subscribe" class="subs-btn">
+                </form>
+                <p>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-pinterest"></i>
+                </p>
+            </div>
+        </section>
+
+    <footer>
+        Copyright &copy;2020 All rights reserved | Organic Mantra
+    </footer>
+
+    <script>
+        function disc_display() {
+        discount = document.getElementById('discount');
+        if (discount.style.display == 'flex') {
+            discount.style.display = 'none';
+        }
+        else
+            discount.style.display = 'flex';
+    }
+    </script>
+    </body>
+
+</html>
